@@ -4,7 +4,7 @@ import random
 
 class Player:
     def __init__(self, letter):
-        self.letter = letter
+        self.letter = letter  # letter can be X or O
 
     def get_move(self):
         pass
