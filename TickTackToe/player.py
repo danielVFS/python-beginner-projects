@@ -4,9 +4,8 @@ import random
 
 class Player:
     def __init__(self, letter):
-        self.letter = letter  # letter is X or O
+        self.letter = letter
 
-    # we want all player to get their next move given a name
     def get_move(self):
         pass
 
@@ -20,6 +19,14 @@ class RandomComputerPlayer(Player):
 
 
 class HumanPlayer(Player):
+    def __init__(self, letter):
+        super().__init__(letter)
+
+    def get_move(self):
+        pass
+
+
+class SmartComputerPlayer(Player):
     def __init__(self, letter):
         super().__init__(letter)
 
