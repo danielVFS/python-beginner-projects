@@ -13,7 +13,6 @@ class TicTacToe:
         #   |   |   |
         #   |   |   |
         board = [self.board[i * 3: (i + 1) * 3] for i in range(3)]
-        print(board)
         for row in board:
             print('| ' + ' | '.join(row) + ' | ')
 
@@ -23,9 +22,10 @@ class TicTacToe:
         # 3 | 4 | 5 |
         # 6 | 7 | 8 |
         number_board = [[str(i) for i in range(j * 3, (j + 1) * 3)] for j in range(3)]
-        print(number_board)
         for row in number_board:
             print('| ' + ' | '.join(row) + ' | ')
+
+    def available_moves(self):
 
 
 if __name__ == '__main__':
